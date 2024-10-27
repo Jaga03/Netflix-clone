@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch&family=Unlock&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(7, 7, 7) !important;
+    height: 100vh;
+}
+
+.header-container{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding: 2px 8%;
+    position: relative;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.logo{
+    width: 190px;
+    cursor: pointer;
+}
+nav button{
+    margin-left: 10px;
+}
+
+.sign-up-button{
+    border: 0;
+    background-color: #E50914;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 7px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sign-up-button:hover{
+    opacity: 0.8;
+}
+
+.lang-btn{
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 25px;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 4px;
+    border: 0.5px solid grey;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.drop-icon{
+    width: 8px;
+    margin-left: 10px;
+}
+.lang-icon{
+    width: 25px;
+    margin-right: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(43, 43, 43, 0.2);
+    z-index: 1;
+    text-align: center;
+    margin-left: 14px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+  .dropdown-content a:hover {
+    background-color: rgb(21, 21, 199);
+    color: #ffffff;
+}
+
+.show {
+    display:block;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+.header-container h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 900;
+    max-width: 650px;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.email-signup{
+    margin-top: 15px;
+}
+.email-signup input{
+    border: 1px solid rgb(206, 204, 204);
+    padding: 14px 20px;
+    width: 65%;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+.email-signup button{
+    border: 0;
+    background-color: #E50914;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 30%;
+}
+.email-signup input::placeholder{
+    color: #ffffff;
+}
+
+.movie-section{
+    width: 80%;
+    padding: 20px;
+    padding-bottom: 35px;
+}
+
+.movie-section h2{
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 32px;
+    margin-left: 12%;
+    width: 100%;
+    padding-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 700;
+
+}
+.carousel-section {
+    width: 100%;
+    padding: 20px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-left: 13%;
+    
+}
+
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+    width: calc(200px * 10);
+    scroll-behavior: smooth;
+}
+
+.carousel-card {
+    min-width: 19.3%;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-card img:hover{
+    transform: scale(1.2);
+}
+
+.carousel-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-number {
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    font-size: 6vw;
+    font-weight: bold;
+    color: #000000;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.arrow {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(108, 108, 108, 0.5);
+    padding: 40px 8px;
+    z-index: 100;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow-left {
+    left: 15px;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.arrow-right {
+    right: 10px;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.carousel-wrapper {
+    max-width: calc(200px * 5);
+
+}
+.bg-content{
+    background-color: rgb(7, 7, 7);
+}
+
+.movie-heading{
+    font-size: 35px;
+    font-weight: 400;
+    font-family: "Rubik Glitch", system-ui;
+  font-style: normal;
+}
+
+.movie-button{
+    border: 0;
+    background-color: #E50914;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.movie-button:hover{
+    opacity: 0.8;
+}
+
+.reasons-section{
+    width: 80%;
+    padding-bottom: 35px;
+    padding: 20px;
+}
+
+.reasons-section h2{
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 32px;
+    margin-left: 12%;
+    width: 100%;
+    padding-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+#section-features {
+    width: 100%;
+    margin-left: 12%;
+   
+     
+}
+
+.card{
+    background-image: linear-gradient(#1D1932,#250000);
+}
+
+.img-content1{
+    margin-top: 85px;
+}
+
+.img-content2{
+    margin-top: 45px;
+}
+.img-content3{
+    margin-top: 100px;
+}
+.img-content4{
+    margin-top: 45px;
+}
+.card-heading{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+}
+.card-paragraph{
+    color: #9a9595;
+    padding-top: 10px;
+}
+
+.faq-container{
+    background-color:rgb(7, 7, 7) ;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+.faq-container h2{
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+.ques{
+    background-color: #2d2d2d;
+    padding: 15px;
+    font-size: 26px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.ques:hover{
+    background-color: #545454;
+}
+.ans{
+    max-height: 0px;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.faq.active .ans{
+    max-height: 300px;
+}
+.ans p{
+    background-color: #2d2d2d;
+    padding: 15px;
+    font-size: 26px;
+    color: #ffffff;
+    border-top: 1px solid #000;
+}
+.ques i{
+    font-size: 40px;
+}
+
+.faq i{
+    transition: all 0.3s ease-in-out;
+}
+
+.faq.active i{
+   transform: rotate(45deg);
+}
+
+.bottom-section{
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.email-content{
+    width: 60%;
+    margin-left: 18%;
+}
+
+.bottom-section p{
+    color: #ffffff;
+    font-size: 18px;
+}
+.footer-content{
+    width: 80%;
+    margin-left: 8%;
+}
+.footer-content p{
+    color: #979696;
+    font-size: 16px;
+}
+.footer-content p span{
+    text-decoration: underline;
+}
